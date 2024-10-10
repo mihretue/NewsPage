@@ -149,3 +149,156 @@
     text-align: left;
     color:aliceblue;
 }
+
+.notification-container{
+    width: 536px;
+    height: 408px;
+    top: 605px;
+    left: 2582px;
+    padding: 30px 1px 0px 0px;
+    gap: 20px;
+    border-radius: 15px ;
+    border: 1px ;
+    opacity: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+}
+.notification-header{
+    width: 100%;
+    height: 70px;
+    position: relative;
+    margin-top:-30px;
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+    font-family: Urbanist;
+    
+    /* padding: 10px; */
+}
+.notification-header h5{
+    padding: 10px;
+    font-weight: 700;
+    font-size: 18px;
+}
+.notification-header p{
+    color: #18AA9D;
+    font-weight: 700;
+    font-size: 11px;
+}
+.message{
+    width: 536px;
+    height: 90%;
+    top: 68px;
+    gap: 10px;
+    opacity: 0px;
+    gap: 10px;
+    opacity: 0px;
+    border-radius: 10px;
+}
+.message-container{
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: Urbanist;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: left;
+    padding: 6px;
+    height: 28%;
+    transition: background-color 0.3s;
+}
+
+.message-container:hover{
+    background: #18AA9D26;
+    border-bottom: 2px solid #18AA9D26;
+}
+
+.message-container img{
+    /* background: black; */
+    width: 24px;
+    height: 24px;
+    padding: 2px 2.5px 2px 2.5px;
+    margin-top: -3rem;
+    gap: 20px;
+    opacity: 0px;
+}
+
+/* #more.button {
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 24px;
+    height: 24px;
+    padding: 2px 2.5px 2px 2.5px;
+    margin-top: -3rem;
+    gap: 20px;
+    opacity: 0px;
+    border: none;
+    background: white;
+}
+
+#more.button:hover{
+    transform: scale(1.05); 
+    box-shadow: #18AA9D26;
+    background: #18AA9D26;
+}
+#more.button:active{
+    transform: scale(0.95);
+    box-shadow: #18AA9D68;
+} */
+.text-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Urbanist;
+    /* font-size: 1rem; */
+    font-weight: 400;
+    gap: -10px;
+    text-align: left;
+    padding: 10px;
+    width: 65%;
+}
+.text-message h1{
+    font-size: 1.1rem;
+}
+.text-message p{
+    width: 326px;
+    height: 40px;
+    gap: 0px;
+    opacity: 0px;
+    margin-top: -5px;
+    font-size:0.9rem;
+}
+.text-message time{
+    color: #92989E ;
+    margin-top: -12px;
+    font-size: 0.8rem;
+}
+#more-button h2{
+    border: none;
+    padding: 0.5rem;
+    margin: -2rem 2rem 2rem 0rem;
+    background: none;
+    cursor: pointer;
+    display:inline-block;
+    font-size: 1rem;
+    font-weight: lighter;
+    background-color: #18AA9D26;
+    border: 2px solid #18AA9D26;
+    border-radius: 8px;
+    color: #18AA9D;
+}
+#more-button{
+    
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    cursor: pointer;
+    display:block;
+    margin-left: auto;
+    
+}
+#more-button img{
+    display: block;
+}
