@@ -58,12 +58,66 @@
                         <img src="./images/doublearrow.png" />
                     </div>
                 </div>
-
+                <div class="news">
+                    <img src="./images/director.png" alt="news image"/>
+                    <div class="news_text">
+                        <h3>Featured News</h3>
+                        <pre>ITDB- ጳጉሜ 4/2016</pre>
+                        <h1>350 አቅመ ደካሞች ማዕድ ማጋራት መረሃ-ግብር ተካሄደ</h1>
+                        <p>
+                            ITDB- ጳጎሜ 4/2016 ዓ.ም የአዲስ አበባ ከተማ አስተዳደር ኢኖቬሽንና ቴክኖሎጂ ልማት ቢሮ የ2017ዓ.ም አዲስ ዓመት በአ....
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <h4>Read More</h4>
+                        <img src="./images/doublearrow.png" />
+                    </div>
+                </div><div class="news">
+                    <img src="./images/director.png" alt="news image"/>
+                    <div class="news_text">
+                        <h3>Featured News</h3>
+                        <pre>ITDB- ጳጉሜ 4/2016</pre>
+                        <h1>350 አቅመ ደካሞች ማዕድ ማጋራት መረሃ-ግብር ተካሄደ</h1>
+                        <p>
+                            ITDB- ጳጎሜ 4/2016 ዓ.ም የአዲስ አበባ ከተማ አስተዳደር ኢኖቬሽንና ቴክኖሎጂ ልማት ቢሮ የ2017ዓ.ም አዲስ ዓመት በአ....
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <h4>Read More</h4>
+                        <img src="./images/doublearrow.png" />
+                    </div>
+                </div><div class="news">
+                    <img src="./images/director.png" alt="news image"/>
+                    <div class="news_text">
+                        <h3>Featured News</h3>
+                        <pre>ITDB- ጳጉሜ 4/2016</pre>
+                        <h1>350 አቅመ ደካሞች ማዕድ ማጋራት መረሃ-ግብር ተካሄደ</h1>
+                        <p>
+                            ITDB- ጳጎሜ 4/2016 ዓ.ም የአዲስ አበባ ከተማ አስተዳደር ኢኖቬሽንና ቴክኖሎጂ ልማት ቢሮ የ2017ዓ.ም አዲስ ዓመት በአ....
+                        </p>
+                    </div>
+                    <div class="read-more">
+                        <h4>Read More</h4>
+                        <img src="./images/doublearrow.png" />
+                    </div>
+                </div>
             </section>
-            <div class="more-news">
+            <button id="more-button" onclick="showMoreNews()">
                 <h4>More from the News</h4>
-                <img src="./images/arrow.png"/>
-            </div>
+                <img src="./images/arrow.png" alt="Arrow"/>
+            </button>
         </div>
+        <script>
+            let displayedNewsCount = 3;
+            function showMoreNews() {
+                const newsItems = document.querySelectorAll('.news');
+                displayedNewsCount += 3;
+                newsItems.forEach((newsItem, index) => {
+                    if (index < displayedNewsCount) {
+                        newsItem.classList.add('visible');
+                    }
+                });
+            }
+        </script>
     </body>
 </html>
